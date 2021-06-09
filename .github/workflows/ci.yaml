@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - dev
-      - master
   pull_request:
     types: [closed]
   release:
@@ -14,7 +13,7 @@ jobs:
   docker_push:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout expex main breanch
+      - name: Checkout expex master breanch
         uses: actions/checkout@v2
         if: ${{ github.event_name == 'release' || github.event.pull_request.merged == true }}
         with:
