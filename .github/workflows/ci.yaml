@@ -19,7 +19,7 @@ jobs:
         if: ${{ github.event_name == 'release' || github.event.pull_request.merged == true }}
         with:
           repository: xec-cm/expex
-          ref: main
+          ref: master
           path: expex
 
       - name: Checkout expex dev breanch
