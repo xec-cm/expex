@@ -89,7 +89,7 @@ excel_exporter_server <- function(id) {
                 glue::glue("{input$file_name}.csv")
             },
             content <- function(file) {
-                readr::write_delim(x = df_loaded(), file = file, delim = input$delimeter)
+                readr::write_delim(x = df_loaded(), file = file, delim = input$delimeter, na = "")
             }
         )
     })
