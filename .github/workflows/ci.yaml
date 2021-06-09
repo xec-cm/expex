@@ -52,7 +52,7 @@ jobs:
           push: true
           no-cache: true
           tags: |
-            xec-cm/expex:dev
+            francesccatala/expex:dev
 
       - name: Build and push main breanch
         uses: docker/build-push-action@v2
@@ -64,7 +64,7 @@ jobs:
           push: true
           no-cache: true
           tags: |
-            xec-cm/expex:main
+            francesccatala/expex:main
 
       - name: Build and push release
         uses: docker/build-push-action@v2
@@ -76,4 +76,4 @@ jobs:
           push: true
           no-cache: true
           tags: |
-            xec-cm/expex:latest
+            francesccatala/expex:latest
