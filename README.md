@@ -2,6 +2,7 @@
 # expex
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/xec-cm/expex/workflows/R-CMD-check/badge.svg)](https://github.com/xec-cm/expex/actions)
 <!-- badges: end -->
 
 The goal of expex is to ...
